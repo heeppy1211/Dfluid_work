@@ -21,7 +21,7 @@ table {border-collapse:collapse;border-spacing:0}
 html {
     font-size: 62.5%;
     .main {
-        background-color: #fff;
+        background-color: $color-white;
         .container {
             font-family: $font-exo2;
             font-size: 1.8rem;
@@ -49,7 +49,7 @@ html {
 
 .sec {
     &01 {
-        color: #000;
+        color: $color-black;
         padding: 12rem 8rem 11rem;
         text-align: left;
         .profile-list {
@@ -65,11 +65,11 @@ html {
                     margin-top: 4rem;
                     .h2 {
                         font-weight: bold;
-                        color: #000;
+                        color: $color-black;
                     }
                     .conts {
                         margin-top: 2.4rem;
-                        color: #000;
+                        color: $color-black;
                         font-family: $font-monts;
                         font-weight: 400;
                         white-space: pre-wrap;
@@ -88,20 +88,20 @@ html {
     }
     &02 {
         padding: 15.2rem 8rem;
-        background-color: #000; //임시
+        background-color: $color-black;
         .h2 {
             font-weight: bold;
-            color: #fff;
+            color: $color-white;
         }
         .conts {
             margin-top: 2.4rem;
-            color: #fff;
+            color: $color-white;
             font-family: $font-monts;
             font-weight: 400;
             opacity: 0.8;
         }
         .sub {
-            color: #fff;
+            color: $color-white;
             font-size: 1.4rem;
             letter-spacing: -0.021rem;
             opacity: 0.5;
@@ -110,7 +110,7 @@ html {
                 display: block;
                 width: 100%;
                 height: 1px;
-                background-color: #fff;
+                background-color: $color-white;
                 margin: 3.2rem 0;
             }
         }
@@ -120,7 +120,7 @@ html {
             .h3 {
                 font-weight: bold;
                 font-size: 1.6rem;
-                color: #fff;
+                color: $color-white;
                 letter-spacing: -0.024rem;
                 & + form {
                     display: inline-block;
@@ -133,7 +133,7 @@ html {
                             display: inline-block;
                             width: 50rem;
                             height: 5rem;
-                            border: 1px solid #fff;
+                            border: 1px solid $color-white;
                             border-radius: 7px;
                             -webkit-backdrop-filter: blur(10px);
                             backdrop-filter: blur(10px);
@@ -143,11 +143,11 @@ html {
                                 height: calc(100% - 2px);
                                 background-color: transparent;
                                 border: 0;
-                                color: #fff;
+                                color: $color-white;
                                 letter-spacing: -0.024rem;
                                 padding-left: 20px;
                                 &::placeholder {
-                                    color: #fff;
+                                    color: $color-white;
                                 }
                                 &:focus {
                                     outline: 0;

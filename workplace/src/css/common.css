@@ -55,7 +55,7 @@ html {
   font-size: 62.5%;
 }
 html .main {
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
 }
 html .main .container {
   font-family: "Exo 2", sans-serif;
@@ -122,17 +122,17 @@ html .main .container .conts {
 }
 .sec02 .h2 {
   font-weight: bold;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 .sec02 .conts {
   margin-top: 2.4rem;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   opacity: 0.8;
 }
 .sec02 .sub {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 1.4rem;
   letter-spacing: -0.021rem;
   opacity: 0.5;
@@ -142,7 +142,7 @@ html .main .container .conts {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   margin: 3.2rem 0;
 }
 .sec02 .newsletter-wrap {
@@ -152,7 +152,7 @@ html .main .container .conts {
 .sec02 .newsletter-wrap .h3 {
   font-weight: bold;
   font-size: 1.6rem;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   letter-spacing: -0.024rem;
 }
 .sec02 .newsletter-wrap .h3 + form {
@@ -168,7 +168,7 @@ html .main .container .conts {
   display: inline-block;
   width: 50rem;
   height: 5rem;
-  border: 1px solid #fff;
+  border: 1px solid hsl(0, 0%, 100%);
   border-radius: 7px;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -179,15 +179,15 @@ html .main .container .conts {
   height: calc(100% - 2px);
   background-color: transparent;
   border: 0;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   letter-spacing: -0.024rem;
   padding-left: 20px;
 }
 .sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .email-input::-moz-placeholder {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 .sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .email-input::placeholder {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 .sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap .email-input:focus {
   outline: 0;
