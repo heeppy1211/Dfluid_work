@@ -4,6 +4,7 @@ import img01 from '../images/sec01-img-1.png';
 import img02 from '../images/sec01-img-2.png';
 import img03 from '../images/sec01-img-3.png';
 import React from "react";
+import {Link} from "react-router-dom"
 
 const ProfileCardList =  [
   {
@@ -30,15 +31,15 @@ const ProfileCardList =  [
 ];
 const renderList = (list) => (
   <div className="profile-list">
-    {list.map((item, index) => (
-      <div className="item">
+    {list.map((item) => (
+      <div className="item" key={item.index}>
         <img src={item.url} className="profile-img" alt={item.alt} />
         <div className="profile-conts">
-          <h2 class="h2">{item.title}</h2>
+          <h2 className="h2">{item.title}</h2>
           <div className="conts">
             {item.conts}
           </div>
-          <a href="#" className="link-btn">LEARN MORE</a>
+          <Link className="link-btn">LEARN MORE</Link>
         </div>
       </div>
     ))}

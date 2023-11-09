@@ -102,10 +102,11 @@ html .main .container .conts {
   color: #000;
 }
 .sec01 .profile-list .item .profile-conts .conts {
-  margin-top: 24px;
+  margin-top: 2.4rem;
   color: #000;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  white-space: pre-wrap;
 }
 .sec01 .profile-list .item .profile-conts .link-btn {
   display: inline-block;
@@ -203,11 +204,23 @@ html .main .container .conts {
   border-color: #ff6633;
   animation: vibration 0.1s 3;
 }
+@keyframes vibration {
+  from {
+    transform: rotate(0.5deg);
+  }
+  to {
+    transform: rotate(-0.5deg);
+  }
+}
 .sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-err .text-err {
   display: block;
 }
-.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-err .send-btn.is-disabled {
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-err .send-btn {
   opacity: 0.1;
+  cursor: not-allowed;
+}
+.sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap.is-pass {
+  border-color: #00c300;
 }
 .sec02 .newsletter-wrap .h3 + form .email-input-container .text-err {
   display: none;
@@ -216,13 +229,4 @@ html .main .container .conts {
   line-height: 1.9rem;
   margin-top: 1.3rem;
   padding-left: 1.6rem;
-}
-
-@keyframes vibration {
-  from {
-    transform: rotate(0.5deg);
-  }
-  to {
-    transform: rotate(-0.5deg);
-  }
 }/*# sourceMappingURL=common.css.map */

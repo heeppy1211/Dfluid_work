@@ -68,10 +68,11 @@ html {
                         color: #000;
                     }
                     .conts {
-                        margin-top: 24px;
+                        margin-top: 2.4rem;
                         color: #000;
                         font-family: $font-monts;
                         font-weight: 400;
+                        white-space: pre-wrap;
                     }
                     .link-btn {
                         display: inline-block;
@@ -164,12 +165,24 @@ html {
                             &.is-err {
                                 border-color: #ff6633;
                                 animation: vibration .1s 3;
+                                @keyframes vibration {
+                                    from {
+                                        transform: rotate(0.5deg);
+                                    }
+                                    to {
+                                        transform: rotate(-0.5deg);
+                                    }
+                                }
                                 .text-err {
                                     display: block;
                                 }
-                                .send-btn.is-disabled {
+                                .send-btn {
                                     opacity: 0.1;
+                                    cursor: not-allowed;
                                 }
+                            }
+                            &.is-pass {
+                                border-color: #00c300;
                             }
                         }
                         .text-err {
@@ -187,11 +200,3 @@ html {
     }
 }
 
-@keyframes vibration {
-    from {
-        transform: rotate(0.5deg);
-    }
-    to {
-        transform: rotate(-0.5deg);
-    }
-}
