@@ -119,6 +119,8 @@ html .main .container .conts {
 .sec02 {
   padding: 15.2rem 8rem;
   background-color: #000;
+  background-size: cover;
+  background-position: center;
 }
 .sec02 .h2 {
   font-weight: bold;
@@ -159,14 +161,16 @@ html .main .container .conts {
   display: inline-block;
   margin-top: 1.6rem;
   text-align: center;
+  width: 100%;
+  max-width: 50rem;
 }
 .sec02 .newsletter-wrap .h3 + form .email-input-container {
-  width: 50rem;
-  text-align: left;
+  width: 100%;
+  text-align: center;
 }
 .sec02 .newsletter-wrap .h3 + form .email-input-container .email-input-wrap {
   display: inline-block;
-  width: 50rem;
+  width: 100%;
   height: 5rem;
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 7px;
@@ -229,4 +233,24 @@ html .main .container .conts {
   line-height: 1.9rem;
   margin-top: 1.3rem;
   padding-left: 1.6rem;
+  text-align: left;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  html {
+    font-size: 50%;
+  }
+  .profile-list {
+    display: block !important;
+    margin-top: 10rem !important;
+  }
+  .profile-list .item {
+    text-align: center;
+  }
+  .profile-list .item img {
+    margin: 0 auto;
+  }
+  .profile-list .item + .item {
+    margin-top: 10rem;
+  }
 }/*# sourceMappingURL=common.css.map */
